@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* start nav menu */
+.nav__menu {
+    display: flex;
+    justify-content: space-between;
+    height: 6.5vw;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;    
+    background-color: rgb(255, 254, 254);  
+}
+
+.logo {
+    padding-left: 4.0vw;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.nav__ul {
+    display: flex;
+    padding-right: 4.0vw;
+    
+}
+
+.nav__li {
+    list-style: none;
+    margin-left: 2.3vw;
+    font-weight: 300;
+    font-size: 12px;    
+}
+
+.nav__a:hover {
+    color: #817070;
+}
+
+.main__img {
+    margin-top: 6.5vw;
+    height: 42.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url('../img/head.jpg');
+    background-size: 100%;
+    font-weight: 700;
+    font-size: 5vw;
+    color: white;
+}
+
+.main__line {
+    background-color: #817070;
+    width: 8.0vw;
+    height: 0.8vw;
+    margin-top: 0.5vw;
+}
+
+
+/* start story block */
+.block__title {
+    text-align: center;
+    padding: 4vw 0vw;
+    font-weight: 10vw;
+    font-size: 16px;    
+}
+
+.story__content {
+    display: flex;
+    margin-bottom: 5vw;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.story__img {
+    width: 75%;
+    padding-bottom: 15px;   
+}
+
+.story__text {
+    width: 75%;
+    font-weight: 100px;
+    font-size: 16px;
+    text-align: center;
+}
+
+
+/* start blog block */
+.blog {
+    background-color: #EFEFEF;
+    padding-bottom: 3vw;
+}
+
+.blog__content {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;   
+}
+
+.block__blog {
+    height: 500px;
+    background-color: white;
+    margin-bottom: 9px;
+    width: 365px;
+}
+
+.blog__img {
+    width: 325px;
+    height: 216px;
+    padding: 24px 20px;  
+}
+
+.blog__title {
+    padding-top: 20px;
+    padding-left: 20px;
+    font-weight: 400;
+    font-size: 24px;
+    font-style: oblique;    
+}
+
+.blog__text {
+    padding: 0px 20px;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+
+/* start subscribe block */
+.subscribe {
+    height: 170px;
+    background-color: #817070;
+    text-align: center;
+    color: white;
+}
+
+.submit {    
+    padding-top: 25px;
+}
+
+.email__input {
+    margin-top: 1.3vw;
+    margin-bottom: 1.9vw;
+    width: 170px;
+    height: 30px;
+    background-color: #817070;
+    border: 3px solid #FFFFFF;
+    border-radius: 7px;
+    text-align: center;
+}
+
+.email__input::placeholder{
+    color: white;
+    font-weight: 8vw;
+    font-size: 12px;
+}
+
+.submit__btn {
+    width: 100px;
+    height: 30px;
+    background-color: #FFFFFF;
+    border: 3px solid #FFFFFF;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #817070
+}
+
+.submit__btn:hover {
+    background-color: #e7caca6e;
+    cursor: pointer;
+}
+
+
+/* start footer */
+.footer {
+    height: 36px;
+    text-align: center;
+}
+
+.copyright {
+    padding-top: 2vw;
+    font-weight: 8vw;
+    font-size: 10px;
+}
+
+
+@media (min-width: 1080px) {
+    /* nav block */
+    .logo {
+        padding-left: 4.0vw;
+        font-size: 2.0vw;
+    }
+    .nav__li {
+        font-size: 1.7vw;    
+    }
+
+    /* story block */
+    .block__title {
+        font-size: 1.8vw;    
+    }
+    .story__content {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .story__img {
+        width: 40vw;
+        height: 26vw;
+    }   
+    .story__text {
+        width: 39vw;
+        height: 13vw;
+        font-weight: 30vw;
+        font-size: 1.3vw;
+    }
+
+    /* subscribe block */
+    .subscribe {
+        height: 24vw;
+        font-size: 1.8vw; 
+    } 
+    .submit {
+        padding-top: 3.6vw;      
+    }
+    .email__input {
+        width: 20vw;
+        height: 3.5vw;
+    }
+    .email__input::placeholder{
+        font-size: 1.3vw;
+    }    
+    .submit__btn {
+        width: 9vw;
+        height: 3vw;
+        font-size: 1.3vw;
+    }
+
+    /* footer */
+    .footer {
+        height: 5vw;
+    }
+    
+    .copyright {
+        font-size: 1.3vw;
+    }
+}
