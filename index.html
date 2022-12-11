@@ -9,120 +9,108 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Oswald"
       rel="stylesheet"
     />
   </head>
   <body>
-    <header class="header__index">
-      <nav class="nav__menu">
-        <div class="logo">
-          <h1>COFFEE HOUSE</h1>
-        </div>
-        <div class="nav__btns">
-          <ul class="nav__ul">
-            <li class="nav__li"><a class="nav__a" href="#">HOME</a></li>
-            <li class="nav__li"><a class="nav__a" href="#story">STORY</a></li>
-            <li class="nav__li"><a class="nav__a" href="#blog">BLOG</a></li>
-            <li class="nav__li"><a class="nav__a" href="#subscribe">SUBSCRIBE</a></li>
-          </ul>
-        </div>
+    <nav class="nav">
+      <div class="nav__logo">COFFEE HOUSE</div>
+      <nav class="nav__nav">
+        <ul class="nav__ul">
+          <li class="nav__li"><a href="#home">HOME</a></li>
+          <li class="nav__li"><a href="#story">STORY</a></li>
+          <li class="nav__li"><a href="#blog">BLOG</a></li>
+          <li class="nav__li"><a href="#subscribe">SUBSCRIBE</a></li>
+        </ul>
       </nav>
-      <div class="main__img">
-        <p>TAKE YOUR TIME</p>
-        <div class="main__line"></div>
+    </nav>
+    <header class="header">
+      <a name="home"></a>
+      <div class="header__content">
+        <div class="header__img">
+          <img src="./static/img/head.jpg" alt="header img" />
+        </div>
+        <div class="header__text">TAKE YOUR TIME</div>
+        <a name="story"></a>
       </div>
     </header>
-
     <main>
       <div class="story">
-        <div class="block__title">
-          <p><a name="story"></a><h2>STORY</h2></p>
-        </div>
-        <div class="story__content">
-          <img
-            class="story__img"
-            src="static/img/story_img.jfif"
-              alt="coffee_img"
-          />
-          <div class="story__text">
-            <p>
+        <div class="story__title">STORY</div>
+        <div class="story__block">
+          <div class="story__img">
+            <img src="./static/img/story_img.jfif" alt="story img" />
+          </div>
+          <div class="story__content">
+            <p class="story__text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
               varius eget arcu quis cursus. Nunc id tortor imperdiet, vestibulum
               orci sed, gravida orci. Cras a enim ac elit eleifend euismod.
               Class aptent taciti sociosqu ad litora torquent per conubia
-              nostra, per inceptos himenaeos. Praesent mattis ultrices est,
+              nostra, per inceptos himenaeos.Praesent mattis ultrices est,
               congue ullamcorper erat bibendum pulvinar. In accumsan dapibus
               accumsan. Maecenas semper est ut nunc feugiat, vel ultrices ligula
               commodo. Donec eget pulvinar nunc, eget pharetra risus.
             </p>
+            <a name="blog"></a>
           </div>
         </div>
       </div>
-
       <div class="blog">
-        <div class="block__title">
-          <p><a name="blog"></a><h2>BLOG</h2></p>
-        </div>
+        <div class="blog__title">BLOG</div>
         <div class="blog__content">
-          <div class="block__blog">
-            <p class="blog__title">Daily Coffee News</p>
-            <img
-              class="blog__img"
-              src="static/img/blog_img1.jfif"
-              alt="coffee_img"
-            />
-            <p class="blog__text">
+          <div class="blog__card">
+            <div class="blog__label">Daily Coffee News</div>
+            <div class="blog__img">
+              <img src="./static/img/blog_img2.jfif" alt="card img 1" />
+            </div>
+            <div class="blog__text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
               varius eget arcu quis cursus. Nunc id tortor imperdiet, vestibulum
               orci sed, gravida orci. Cras a enim ac elit eleifend euismod.
-            </p>
+            </div>
+          </div>
+          <div class="blog__card">
+            <div class="blog__label">Daily Coffee News</div>
+            <div class="blog__img">
+              <img src="./static/img/blog_img1.jfif" alt="card img 1" />
+            </div>
+            <div class="blog__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              varius eget arcu quis cursus. Nunc id tortor imperdiet, vestibulum
+              orci sed, gravida orci. Cras a enim ac elit eleifend euismod.
+            </div>
           </div>
 
-          <div class="block__blog">
-            <p class="blog__title">Dutch Coffee Chains</p>
-            <img
-              class="blog__img"
-              src="static/img/blog_img2.jfif"
-              alt="coffee_img"
-            />
-            <p class="blog__text">
+          <div class="blog__card">
+            <div class="blog__label">Start Up In Minneapolis</div>
+            <div class="blog__img">
+              <img src="./static/img/blog_img3.jfif" alt="card img 1" />
+            </div>
+            <div class="blog__text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
               varius eget arcu quis cursus. Nunc id tortor imperdiet, vestibulum
               orci sed, gravida orci. Cras a enim ac elit eleifend euismod.
-            </p>
-          </div>
-
-          <div class="block__blog">
-            <p class="blog__title">Start Up In Minneapolis</p>
-            <img
-              class="blog__img"
-              src="static/img/blog_img3.jfif"
-              alt="coffee_img"
-            />
-            <p class="blog__text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-              varius eget arcu quis cursus. Nunc id tortor imperdiet, vestibulum
-              orci sed, gravida orci. Cras a enim ac elit eleifend euismod.
-            </p>
+            </div>
           </div>
         </div>
       </div>
-
-      <div class="subscribe">
-        <p class="submit"> <a name="subscribe"></a><h2>SUBSCRIBE</h2></p>
-        <form action="#">
-          <div>
-            <input id='email' type="text" placeholder="enter your email" class="email__input">
+      <section class="feedback">
+        <a name="subscribe"></a>
+        <div class="feedback__title">SUBSCRIBE</div>
+        <form action="#" class="feedback__form">
+          <div class="feedback__input">
+            <label for="email"></label>
+            <input type="email" id="email" name="email" placeholder="enter your email">
           </div>
-          <input type="submit" value="SUBMIT" class="submit__btn">
+          <button class="feedback__submit" type="submit">Submit</button>
         </form>
-      </div>
+      </section>
     </main>
-
-    <footer>
-      <div class="footer">
-        <p class="copyright">© COPYRIGHT 2022</p>
+    <footer class="footer">
+      <div class="footer__text">
+        © COPYRIGHT 2021
       </div>
     </footer>
   </body>
