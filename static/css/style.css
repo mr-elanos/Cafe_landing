@@ -103,24 +103,29 @@ body {
   z-index: 1;
   width: 100%;
   background-color: white;
-  height: 6.875rem;
+  min-height: 6.875rem;
   display: flex;
   align-items: center;
   justify-content: space-around;
   border-bottom: 1px #817070 solid;
 }
 .nav__logo {
+  text-transform: capitalize;
   font-weight: 500;
   font-size: 2.25rem;
   line-height: 1.4;
+  margin-left: 5px;
 }
 .nav__ul {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .nav__li {
-  margin-left: 2.875rem;
+  margin: 5px 5px 5px 2.875rem;
 }
 .nav__li a {
+  text-transform: capitalize;
   font-weight: 300;
   font-size: 1.5rem;
   line-height: 1.5;
@@ -133,14 +138,6 @@ body {
   transform: scale(1.1, 1.1);
 }
 
-@media (max-width: 800px) {
-  .nav__ul {
-    display: none;
-  }
-  .nav {
-    justify-content: center;
-  }
-}
 @media (max-width: 600px) {
   .nav {
     justify-content: center;
@@ -148,7 +145,10 @@ body {
     height: 50px;
   }
   .nav__logo {
-    font-size: 26px;
+    font-size: 22px;
+  }
+  .nav__li a {
+    font-size: 14px;
   }
 }
 /*Блок header*/
@@ -173,6 +173,7 @@ body {
   font-weight: 700;
   font-size: 3.75rem;
   line-height: 1.5s;
+  text-transform: capitalize;
 }
 .header__text::after {
   content: "";
@@ -201,6 +202,7 @@ body {
   font-weight: 500;
   font-size: 2.25rem;
   line-height: 1.4;
+  text-transform: capitalize;
   margin: 3.75rem 0px;
 }
 .story__block {
@@ -252,6 +254,7 @@ body {
   font-weight: 500;
   font-size: 2.25rem;
   line-height: 1.6;
+  text-transform: capitalize;
 }
 .blog__content {
   display: flex;
@@ -313,6 +316,7 @@ body {
   font-weight: 500;
   font-size: 2.25rem;
   line-height: 1.5;
+  text-transform: capitalize;
   padding: 3.8125rem 0px 1.5rem;
 }
 .feedback__input {
@@ -356,6 +360,7 @@ body {
   font-weight: 500;
   font-size: 1.25rem;
   line-height: 1.5;
+  text-transform: capitalize;
   color: #817070;
   text-transform: uppercase;
   transition: all 0.4s ease-in;
@@ -374,11 +379,12 @@ body {
 /*Блок footer*/
 .footer {
   height: 4.5rem;
+}
+.footer__text {
+  padding-top: 1.6875rem;
   text-align: center;
   font-weight: 300;
   font-size: 1.25rem;
   line-height: 1.5;
-}
-.footer__text {
-  padding-top: 1.6875rem;
+  text-transform: capitalize;
 }

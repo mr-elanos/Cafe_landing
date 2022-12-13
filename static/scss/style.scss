@@ -38,22 +38,27 @@ body{
     z-index: 1;
     width: 100%;
     background-color: white;
-    height: -rem(110);
+    min-height: -rem(110);
     display: flex;
     align-items: center;
     justify-content: space-around;
     border-bottom: 1px #817070 solid;
     &__logo {
+        text-transform: capitalize;
         font-weight: 500;
         font-size: -rem(36);
         line-height: 1.4;
+        margin-left: 5px;
     }
     &__ul {
         display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     &__li {
-        margin-left: -rem(46);
+        margin: 5px 5px 5px -rem(46);
         & a{
+            text-transform: capitalize;
             font-weight: 300;
             font-size: -rem(24);
             line-height: 1.5;
@@ -67,21 +72,16 @@ body{
         }
     }
 }
-@media (max-width: 800px){
-    .nav__ul{
-    display: none;
-    }
-    .nav{
-        justify-content: center;
-    }
-}
 @media (max-width: 600px){
     .nav{
         justify-content: center;
         position: static;
         height: 50px;
         &__logo{
-            font-size: 26px;
+            font-size: 22px;
+        }
+        &__li a{
+            font-size: 14px;
         }
     }
 }
@@ -110,6 +110,7 @@ body{
         font-weight: 700;
         font-size: -rem(60);
         line-height: 1.5s;
+        text-transform: capitalize;
         &::after{
             content: '';
             display: block;
@@ -140,6 +141,7 @@ body{
         font-weight: 500;
         font-size: -rem(36);
         line-height: 1.4;
+        text-transform: capitalize;
         margin: -rem(60) 0px;
     }
     &__block {
@@ -191,6 +193,7 @@ body{
         font-weight: 500;
         font-size: -rem(36);
         line-height: 1.6;
+        text-transform: capitalize;
     }
     &__content {
         display: flex;
@@ -251,6 +254,7 @@ body{
         font-weight: 500;
         font-size: -rem(36);
         line-height: 1.5;
+        text-transform: capitalize;
         padding: -rem(61) 0px -rem(24);
     }
     &__input {
@@ -280,6 +284,7 @@ body{
         font-weight: 500;
         font-size: -rem(20);
         line-height: 1.5;
+        text-transform: capitalize;
         color: #817070;
         text-transform: uppercase;
         transition: all 0.4s ease-in;
@@ -299,11 +304,12 @@ body{
 /*Блок footer*/
 .footer {
     height: -rem(72);
-    text-align: center;
-    font-weight: 300;
-    font-size: -rem(20);
-    line-height: 1.5;
     &__text {
-        padding-top: -rem(27)
+        padding-top: -rem(27);
+        text-align: center;
+        font-weight: 300;
+        font-size: -rem(20);
+        line-height: 1.5;
+        text-transform: capitalize;
     }
 }
