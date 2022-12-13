@@ -152,9 +152,6 @@ body {
   }
 }
 /*Блок header*/
-.header {
-  padding-top: 6.875rem;
-}
 .header__content {
   position: relative;
   width: 100%;
