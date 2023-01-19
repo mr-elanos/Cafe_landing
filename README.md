@@ -1,5 +1,11 @@
 # cafe_landing
 
-This is a finished simple landing page. Just CSS and HTML, no JS. Responsive design.
+Simple landing page. In this template:
+- used SASS/SCSS
+- semantic tags
+- optimized images
+- responsive design
+- green zone google PageSpeed
+- no JS
 
 https://mr-elanos.github.io/cafe_landing/
