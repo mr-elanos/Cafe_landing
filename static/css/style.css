@@ -161,8 +161,13 @@ body {
   position: absolute;
   bottom: 6.25rem;
 }
+.header__img {
+  width: 100vw;
+  height: 100vh;
+}
 .header__img img {
   width: 100%;
+  height: 100%;
 }
 .header__text {
   position: absolute;
@@ -216,6 +221,7 @@ body {
 }
 .story__img img {
   width: 100%;
+  height: 100%;
 }
 .story__content {
   flex: 1 1 50%;
@@ -278,9 +284,16 @@ body {
 .blog__img {
   margin: 0px 1.25rem 1.5rem;
   overflow: hidden;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .blog__img img {
   width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   transition: all 0.5s ease-out;
