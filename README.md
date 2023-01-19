@@ -1,5 +1,6 @@
 # cafe_landing
 Very simple landing page. In this template:
+- CSS flexbox;
 - used SASS/SCSS;
 - semantic tags;
 - optimized images;
