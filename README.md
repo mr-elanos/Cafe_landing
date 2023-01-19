@@ -7,4 +7,4 @@ Very simple landing page. In this template:
 - green zone google PageSpeed;
 - no JS.
 
-https://mr-elanos.github.io/cafe_landing/
+https://mr-elanos.github.io/Cafe_landing/
