@@ -163,7 +163,7 @@ body {
 }
 .header__img {
   width: 100vw;
-  height: 100vh;
+  height: auto;
 }
 .header__img img {
   width: 100%;
